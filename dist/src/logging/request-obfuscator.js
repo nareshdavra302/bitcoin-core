@@ -57,13 +57,8 @@ function obfuscateResponse(request, instance) {
     return;
   }
 
-  try {
-    request.body = JSON.parse(request.body);
-    const requestBody = JSON.parse(instance.body);
-      
-  } catch (error) {
-    return;    
-  }
+  request.body = JSON.parse(request.body);
+  const requestBody = JSON.parse(instance.body);
 
   if ((0, _lodash.isArray)(request.body)) {
     const methodsById = (0, _lodash.mapKeys)(requestBody, method => method.id);
