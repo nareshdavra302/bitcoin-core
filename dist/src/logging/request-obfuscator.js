@@ -57,9 +57,11 @@ function obfuscateResponse(request, instance) {
     return;
   }
 
+  let requestBody = {};
+
   try {
     request.body = JSON.parse(request.body);
-    const requestBody = JSON.parse(instance.body);
+    requestBody = JSON.parse(instance.body);
   } catch (error) {
     return;
   }
