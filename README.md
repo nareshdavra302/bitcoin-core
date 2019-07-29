@@ -9,7 +9,7 @@ A modern Bitcoin Core REST and RPC client to execute administrative tasks, [mult
 Install the package via `yarn`:
 
 ```sh
-yarn add bitcoin-core
+yarn add bitcoin-core-json
 ```
 
 or via `npm`:
@@ -17,7 +17,7 @@ or via `npm`:
 Install the package via `npm`:
 
 ```sh
-npm install bitcoin-core --save
+npm install bitcoin-core-json --save
 ```
 
 ## Usage
@@ -43,7 +43,7 @@ npm install bitcoin-core --save
 The `network` will automatically determine the port to connect to, just like the `bitcoind` and `bitcoin-cli` commands.
 
 ```js
-const Client = require('bitcoin-core');
+const Client = require('bitcoin-core-json');
 const client = new Client({ network: 'regtest' });
 ```
 
@@ -155,7 +155,7 @@ Notice the `rpcauth` hash which has been previously generated for the password `
 Instantiate a client for each wallet and execute commands targeted at each wallet:
 
 ```js
-const Client = require('bitcoin-core');
+const Client = require('bitcoin-core-json');
 
 const wallet1 = new Client({
   network: 'regtest',
@@ -439,7 +439,7 @@ stunnel -d 28332 -r 127.0.0.1:18332 -p stunnel.pem -P ''
 Then pass the public certificate to the client:
 
 ```js
-const Client = require('bitcoin-core');
+const Client = require('bitcoin-core-json');
 const fs = require('fs');
 const client = new Client({
   agentOptions: {
@@ -452,7 +452,7 @@ const client = new Client({
 
 ## Logging
 
-By default, all requests made with `bitcoin-core` are logged using [uphold/debugnyan](https://github.com/uphold/debugnyan) with `bitcoin-core` as the logging namespace.
+By default, all requests made with `bitcoin-core` are logged using [uphold/debugnyan](https://github.com/uphold/debugnyan) with `bitcoin-core-json` as the logging namespace.
 
 Please note that all sensitive data is obfuscated before calling the logger.
 
@@ -466,7 +466,7 @@ const client = new Client();
 client.getTransactionByHash('b4dd08f32be15d96b7166fd77afd18aece7480f72af6c9c7f9c5cbeb01e686fe');
 
 // {
-//   "name": "bitcoin-core",
+//   "name": "bitcoin-core-json",
 //   "hostname": "localhost",
 //   "pid": 57908,
 //   "level": 20,
