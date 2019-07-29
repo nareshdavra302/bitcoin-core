@@ -1,7 +1,7 @@
 {
-  "name": "bitcoin-core",
-  "version": "2.2.0",
-  "description": "A modern Bitcoin Core REST and RPC client.",
+  "name": "bitcoin-core-json",
+  "version": "1.0.0",
+  "description": "Fork of bitcoin-core of ruipmarinho",
   "keywords": [
     "bitcoin",
     "bitcoind",
@@ -10,11 +10,11 @@
     "rest",
     "rpc"
   ],
-  "homepage": "https://github.com/ruimarinho/bitcoin-core",
-  "bugs": "https://github.com/ruimarinho/bitcoin-core/issues",
+  "homepage": "https://github.com/nareshdavra302/bitcoin-core",
+  "bugs": "https://github.com/nareshdavra302/bitcoin-core/issues",
   "license": "MIT",
   "author": {
-    "name": "Rui Marinho",
+    "name": "Naresh Davra",
     "email": "ruipmarinho@gmail.com"
   },
   "main": "dist/src/index.js",
