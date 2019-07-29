@@ -1,6 +1,6 @@
 {
   "name": "bitcoin-core-json",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Fork of bitcoin-core of ruipmarinho",
   "keywords": [
     "bitcoin",
@@ -20,7 +20,7 @@
   "main": "dist/src/index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ruimarinho/bitcoin-core.git"
+    "url": "https://github.com/nareshdavra302/bitcoin-core.git"
   },
   "scripts": {
     "changelog": "github_changelog_generator --no-issues --header-label='# Changelog' --future-release=$npm_config_future_release && sed -i '' -e :a -e '$d;N;2,4ba' -e 'P;D' CHANGELOG.md",
